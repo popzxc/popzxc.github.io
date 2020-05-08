@@ -5,15 +5,36 @@
 # in the templates via {{ site.myvariable }}.
 
 title: IT & stuff
-author: Igor Aleksanov
-email: popzxc@yandex.ru 
+author:
+  name: "Igor Aleksanov"
+  email: "popzxc@yandex.ru"
+  url: "https://popzxc.github.io"
 description: >- # this means to ignore newlines until "baseurl:"
   Rust and programming in general
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: / # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  popzxc
 
-# Build settings
-theme: jekyll-theme-hacker
+source: .
+destination: ./_site
+permalink: /:title
+paginate: 3
+paginate_path: /page/:num/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+future: true
 plugins:
-  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Custom variables
+owner : "popzxc"
+year : "2020"
