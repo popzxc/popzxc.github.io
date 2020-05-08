@@ -1,3 +1,3 @@
 ## Personal blog
 
-Under construction
+Under construction.
