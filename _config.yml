@@ -3,4 +3,5 @@ theme: jekyll-theme-hacker
 title: [IT and stuff]
 description: [Rust & programming in general]
 github:
+  is_user_page: false
   is_project_page: false
