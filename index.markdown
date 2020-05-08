@@ -1,3 +1,0 @@
-## Personal blog
-
-Under construction.
