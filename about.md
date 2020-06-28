@@ -35,7 +35,7 @@ title: About
   - [Python light client](https://github.com/exonum/exonum-python-client);
   - [Python tool](https://github.com/exonum/exonum-launcher) for launching dynamic services.
   
--  Lecturer at ITMO University (Feb 2016 - May 2018)
+- Lecturer at ITMO University (Feb 2016 - May 2018)
   
   Lecturer at courses:
   
