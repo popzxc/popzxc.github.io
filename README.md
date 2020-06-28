@@ -1,6 +1,8 @@
 ## popzxc personal blog
 
-Under construction
+A blog about programming in general and Rust in particular.
+
+Not too much to see yet, but stay tuned!
 
 ## Credits
 
