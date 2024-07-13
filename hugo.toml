@@ -2,3 +2,18 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'dead-simple'
+enableGitInfo = true
+
+menu.main = [
+  { name = "Home", url = "/", weight = 1 },
+]
+
+[markup.highlight]
+codeFences = true
+noClasses = true
+style = "monokailight"
+
+[outputs]
+home = [ "home", "html", "rss", "json" ]
+page = "html"
+
