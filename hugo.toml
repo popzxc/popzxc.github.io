@@ -10,8 +10,8 @@ menu.main = [
 
 [markup.highlight]
 codeFences = true
-noClasses = true
-style = "monokailight"
+noClasses = false
+# style = "monokailight"
 
 [outputs]
 home = [ "home", "html", "rss", "json" ]
