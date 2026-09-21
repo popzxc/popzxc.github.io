@@ -24,7 +24,7 @@ The conclusions are wild as well: "Our goal was to remove a bottleneck that, if 
 
 Similarly, "The context switching that comes with agentic coding is exhausting. One easy way to reduce that fatigue is by automating code review-adjacent tasks that don’t need your attention." -- I see the same problem. You try to increase velocity beyond the _processing_ speed of your team. Isn't the paradox obvious here?
 
-All of that seems to be based on a very wrong premise: code reviews is primarily a mean of establishing the code _correctness_. So let's talk about them.
+All of that seems to be based on a very wrong premise: code reviews is primarily a mean of establishing the code _correctness_. So let's talk about it.
 
 Disclaimer: I am no LLM hater. If anything, I use LLMs very extensively, but I still consider them to be a tool rather than a brain replacement. I do find the current trends of the frontier LLM adoptions annoying and harmful though.
 
