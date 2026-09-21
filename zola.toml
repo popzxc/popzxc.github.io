@@ -1,0 +1,23 @@
+base_url = "https://popzxc.github.io"
+title = "popzxc"
+description = "Personal blog by popzxc."
+author = "popzxc"
+default_language = "en"
+generate_feeds = true
+# Keep the existing RSS address for subscribers, alongside Zola's Atom feed.
+feed_filenames = ["atom.xml", "index.xml"]
+compile_sass = false
+build_search_index = false
+
+[slugify]
+# Hugo included date prefixes in post URLs; keep those links working.
+paths_keep_dates = true
+
+[markdown.highlighting]
+error_on_missing_language = true
+style = "inline"
+theme = "github-dark"
+
+[extra]
+github_url = "https://github.com/popzxc"
+x_url = "https://x.com/popzxc_is_me"

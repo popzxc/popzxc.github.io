@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="{{ lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+    <meta name="description" content="{% block description %}{{ config.description }}{% endblock description %}">
+    {% if current_url is defined %}
+      <link rel="canonical" href="{{ current_url | safe }}">
+    {% endif %}
+    <link rel="stylesheet" href="{{ get_url(path='site.css', cachebust=true) }}">
+    <link rel="alternate" href="{{ get_url(path='atom.xml', trailing_slash=false) }}" type="application/atom+xml" title="{{ config.title }}">
+    <link rel="alternate" href="{{ get_url(path='index.xml', trailing_slash=false) }}" type="application/rss+xml" title="{{ config.title }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header class="site-header page-width">
+      <a class="brand" href="{{ get_url(path='/') }}" aria-label="{{ config.title }} home">{{ config.title }}</a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="{{ config.extra.github_url }}" rel="me">GitHub</a></li>
+          <li><a href="{{ config.extra.x_url }}" rel="me">X</a></li>
+          <li><a href="{{ get_url(path='index.xml', trailing_slash=false) }}">RSS</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="content" class="page-width">
+      {% block content %}{% endblock content %}
+    </main>
+
+    <footer class="site-footer page-width">
+      <span>© {{ config.author }}</span>
+      <a href="{{ get_url(path='atom.xml', trailing_slash=false) }}">Atom</a>
+    </footer>
+  </body>
+</html>
